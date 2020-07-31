@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="index_script.js"></script>
+        <title>My to-do</title>
+    </head>
+    <body>
+        <!-- Bootstrap class to make the text center in the box -->
+        <div class="text-center">
+            <h2>To-Do list</h2>
+        </div>
+
+        <!-- Container automatically sets margin on left and right hand side of the box and is css lass implementing the flexbox -->
+        <div class="container">
+            <div class="row">
+                <input class="form-control col-8" type="text" id="item_val" placeholder="Please enter the item name">
+                <input type="button" class="btn btn-primary offset-1 col-3" value="Add" id="add_btn">
+            </div>
+
+            <!-- List used to display the items -->
+            <!-- Make the use of embedded css -->
+            <ul class="row list-group" id="list_items" style="margin-top: 20px;">
+                <li class="list-group-item">Sample item</li>
+            </ul>
+        </div>
+    </body>
+</html>
